@@ -1,0 +1,427 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
+
+*{ box-sizing: border-box;
+  margin: 0;padding: 0;
+}
+ul{list-style: none;}
+a{display: block;text-decoration: none;color: inherit;}
+img{display: block; object-fit: cover;}
+body {overflow-x: hidden;}
+#wrap{
+  width: 100%; height: 100%;
+  max-width: 1920px;
+  color:#fff;
+  background-color: #011F1F;
+}
+
+/* 인덱스 */
+#mySidenav{
+  z-index: 99;
+  position: relative;
+}
+#mySidenav a {
+  font-family: 'Grandiflora One', cursive;
+  position: fixed;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+#mySidenav a:hover {
+  left: 0;
+}
+.sidenav1 {
+  top: 120px;
+  background-color: #273f3f;
+}
+
+.sidenav2 {
+  top: 180px;
+  background-color: #273f3f;
+}
+
+.sidenav3 {
+  top: 240px;
+  background-color: #778686;
+}
+
+.sidenav4 {
+  top: 300px;
+  background-color: #a3adad;
+}
+.sidenav5 {
+  top: 360px;
+  background-color: #d0d5d5;
+}
+
+
+.inner{
+  width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+}
+
+.header{
+  max-width: 1640px; height: 100px;
+  margin: 0 auto;
+  font-family: 'Grandiflora One', cursive;
+  position: relative;
+}
+.intro .inner{
+  max-width: 1640px; width: 100%;
+  position: relative;
+}
+
+
+
+
+.header h1{
+  float: left;
+  line-height: 100px;
+}
+.header nav{
+  line-height: 100px;
+  letter-spacing: 2px;
+  float: right;
+}
+.header nav ul{
+  width: 500px;
+  font-weight: bold;
+}
+.header nav ul li{
+  float: left;
+  width:100px;
+  color: #fff;
+  text-align: center;
+}
+
+nav ul li a:hover{
+  color: rgb(117, 117, 117);
+}
+.header::after{
+  content:'';display: block;clear: both;
+}
+
+.port{
+  width: 1640px;
+  margin-top:200px;
+  margin-left: 140px;
+  position: relative;
+  transform: .5s scale(1.1);
+}
+.port_text p{
+  font-family: 'Grandiflora One', cursive;
+  font-size: 80px;
+  transition: 1s;
+}
+.port_text{
+  width: 569px;
+  position: relative;
+}
+.port_text img{
+  position: absolute;
+  top: 0; right: 0;
+  transition: 1s;
+}
+@keyframes port_text_img {
+  to{
+    opacity: .8;
+    transform: scale(.8) rotate(15deg);
+  }
+}
+.port_text_img>img{
+  float: left;
+  transition: 1s;
+  margin-top: 140px;
+  margin-right: 20px;
+  animation: port_text_img 2s linear forwards infinite;
+}
+
+.intro_img{
+  top: 140px;
+  right: 0px;
+  transition: 2s;
+  position: absolute;
+  animation: intro 2s linear forwards infinite;
+}
+@keyframes intro{
+  from{
+    translate:(50px, 100px);
+    transition: 1.5s;
+    transform: scale(1) rotate(-15deg);
+  }
+  to{
+    translate:(50px, 100px);
+    transition: 1.5s;
+    opacity: .7;
+    transform: scale(.8) rotate(15deg);
+  }
+}
+
+.sparkling3{
+  left: 480px;
+  top: 180px;
+  position: absolute;
+}
+/* about */
+
+.about{
+  position: relative;
+  margin: 0 auto;
+  background-color: #011F1F;
+  max-width: 1920px; min-height: 1080px;
+}
+.about>.inner{
+  margin: 0 auto;
+  max-width: 1640px;
+  min-height: 1080px;
+}
+.contents img{
+  top: 114px;
+  left: 110px;
+  bottom: 136px;
+  position: absolute;
+}
+.about>.inner .about_text{
+  padding-top: 297px;
+  text-align: right;
+  float: right;
+  width: 690px;
+}
+.about_text h1{
+  font-size: 64px;
+}
+.about_text p{
+  padding-top: 38px;
+}
+
+.contents_items ul{
+  float: right;
+  width: 400px;
+  text-align: center;
+  display: flex;
+} 
+.contents_items ul p{
+  text-align: left;
+} 
+.contents_items ul li{
+  padding-top: 80px;
+  font-weight: bold;
+  width: 100px;
+} 
+
+.design{
+  margin: 0 auto;
+  max-width: 1920px;
+  max-height: 1080px;
+  position: relative;
+}
+.design>.inner{
+  width: 1640px;
+}
+
+.design>.inner h3{
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.design_img{
+  width: 800px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.design_item:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.design_item{
+  width: 100%;
+}
+.dstab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 10%;
+}
+
+
+.design_layout{
+  width: 20%;
+}
+
+
+
+.design_content {
+  display: flex;
+  margin-top: 25px;
+  color: black;
+  width: 100%;
+}
+.design_content img{
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+}
+.design_content::after{
+  display: block;
+  clear: both;
+  content: '';
+}
+
+
+/* 세로탭메뉴 : 버튼형식으로 구성  */
+
+.design_main{
+  box-sizing: border-box;
+  width: 100%;
+  color: #fff;
+}
+.design_main img{
+  box-sizing: border-box;
+
+}
+.design_mainText{
+  width: 100%;
+  margin-left: 10px;
+}
+.design_mainText img{
+  width: 33%;
+  float: left;
+  margin-left: 10px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.dstab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.dstab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.dstab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.dstabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 90%;
+  border-left: none;
+}
+
+.Detail_page {
+  width: 100%;
+  display: flex;
+}
+
+.homepage_design{
+  width: 100%;
+  display: flex;
+}
+
+
+
+
+
+/* 프로젝트 */
+.project:after{
+  content: '';
+  clear: both;
+  display: block;
+}
+.project{
+  max-width: 1920px;
+  min-height: 1080px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.project>.inner{
+  width: 1640px;
+  margin: 0 auto;
+}
+
+.project_item h2{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.project_item{
+  height: 1080px;
+}
+
+/*htab  */
+
+/* Style the tab */
+.htab {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Style the buttons that are used to open the tab content */
+.htab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.htab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.htab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.htabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.htabcontent>img{
+  margin-top: 25px;
+  border-radius: 10px;
+}
+.htabcontent_text{
+  margin-top:25px;
+}
+
+.htabcontent_text a{
+  cursor: pointer;
+  background: #000;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px;
+  width: 124px;
+  text-align: center;
+  border: 3px solid #fff;
+  border-radius: 40px;
+}

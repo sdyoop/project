@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="./js/script.js"></script>
+  <title>PORTFOLIO</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="mySidenav" class="sidenav">
+      <a href="#intro" class="sidenav1">INTRO</a>
+      <a href="#about" class="sidenav2">ABOUT</a>
+      <a href="#project" class="sidenav3">PROJECT</a>
+      <a href="#design" class="sidenav4">DESIGN</a>
+      <a href="#contact" class="sidenav5">CONTACT</a>
+    </div>
+    <div class="intro" id="intro">
+      <div class="inner">
+        <div class="header">
+          <a href="#intro">
+            <h1>Dayoung</h1>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="#intro">INTRO</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#project">PROJECT</a></li>
+              <li><a href="#design">DESIGN</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="port">
+          <div class="port_text">
+            <p>WEB<br>PORTFOLIO</p>
+            <img src="./img/intro/portfolio.png" alt="portfolio">
+          </div>
+          <div class="port_text_img">
+            <img src="./img/intro/bread.png" alt="portfolio">
+            <img src="./img/intro/wolf.png" alt="portfolio">
+            <img src="./img/intro/sparkling03.png" alt="" class="sparkling3">
+          </div>
+        </div>
+        <img src="./img/intro/intro.png" alt="" class="intro_img">
+      </div>
+
+    </div>
+    <div class="about" id="about">
+      <div class="inner">
+        <div class="contents">
+          <div class="contents_items">
+            <img src="./img/intro/about.png" alt="about">
+            <div class="about_text">
+              <h1>I Can do it!</h1>
+              <p>
+                빵을 너무나 좋아하며 흥미진진한 것들에 문을 두드리는 심 다영이라고 합니다.<br>
+                다시 한 걸음 한 발짝씩 시작을 하고자 하는 마음으로 프론트앤드 개발자에 문을<br>
+                두드리고 있으며 할 수 있다는 마음가짐으로 준비하며 앞으로 나가고자 합니다.
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>REACT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="project" id="project">
+      <div class="inner">
+        <div class="project_item">
+          <h2>PROJECT</h2>
+          <div class="htab">
+            <button class="htablinks" onclick="openPj(event, 'hLondon')">시드물</button>
+            <button class="htablinks" onclick="openPj(event, 'hParis')">platfoU</button>
+            <button class="htablinks" onclick="openPj(event, 'hUdec')">충북UDEC</button>
+            <button class="htablinks" onclick="openPj(event, 'hTokyo')">Apple</button>
+          </div>
+
+          <!-- Tab content -->
+          <div id="hLondon" class="htabcontent">
+            <img src="img/project01.png" alt="">
+            <div class="htabcontent_text">
+              <h3>시드물</h3>
+              <p>소요기간 : 2023-12-11~2023-12-15</p>
+              <a target="_blank" href="https://sdyoop.github.io/project_seedwater/">Click</a>
+              <a target="_blank" href="https://github.com/sdyoop/project_seedwater.git">Click</a>
+            </div>
+          </div>
+
+          <div id="hParis" class="htabcontent">
+            <img src="img/pj02.jpg" alt="">
+            <div class="htabcontent_text">
+              <h3>platfoU</h3>
+              <p>소요기간 : 2021-03~2021-06</p>
+              <a target="_blank" href="https://www.usg-platform.or.kr/">Click</a>
+            </div>
+          </div>
+          <div id="hUdec" class="htabcontent">
+            <img src="img/pj04.jpg" alt="">
+            <div class="htabcontent_text">
+              <h3>충북UDEC</h3>
+              <p>소요기간 : 2021-01~2021-03</p>
+              <a target="_blank" href="https://cb.udec.kr/home/mainPage.do">Click</a>
+            </div>
+          </div>
+
+          <div id="hTokyo" class="htabcontent">
+            <img src="img/project03.jpg" alt="">
+            <div class="htabcontent_text">
+              <h3>Apple</h3>
+              <p>소요기간 : 2023-10-17~2023-11-20</p>
+              <a target="_blank" href="https://aesthetic-longma-1117.netlify.app/">Click</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="design" id="design">
+      <div class="inner">
+        <div class="design_item">
+          <h3>DESIGN</h3>
+          <div class="dstab">
+            <button class="dstablinks" onclick="openDs(event, 'Ds01')" id="defaultOpen">Banner</button>
+            <button class="dstablinks" onclick="openDs(event, 'Ds02')">homepage</button>
+            <button class="dstablinks" onclick="openDs(event, 'Ds03')">Detail</button>
+          </div>
+          <div id="Ds01" class="dstabcontent">
+            <div class="design_mainText">
+              <h3>장다비움</h3>
+              <p>2021년 비티진 마케팅 팀에 근무하면서 만든 디자인으로 장다비움 인스타채널을 진행하면서 만든 배너 디자인 입니다<br> 장다비움은 장 건강을 위하여 만들어진 상품으로 차전자피
+                식이섬유와 녹차추출물로 만들어진 건강기능식품 입니다.</p>
+              <h3>banner_design</h3>
+              <p>https://www.instagram.com/jangdabium_/</p>
+            </div>
+            <div class="design_layout">
+              <div class="design_content">
+                <img src="img/design/banner03.jpg" alt="banner">
+                <img src="img/design/banner03_00.jpg" alt="banner">
+                <img src="img/design/banner03_01.jpg" alt="banner">
+                <img src="img/design/banner03_02.jpg" alt="banner">
+                <img src="img/design/banner03_03.jpg" alt="banner">
+                <img src="img/design/banner4.jpg" alt="banner">
+              </div>
+              <div class="design_content">
+                <img src="img/design/banner05.jpg" alt="banner">
+                <img src="img/design/banner06.jpg" alt="banner">
+                <img src="img/design/banner07.jpg" alt="banner">
+                <img src="img/design/banner08.jpg" alt="banner">
+              </div>
+              
+            </div>
+
+          </div>
+          <div id="Ds02" class="dstabcontent">
+            <div class="design_mainText">
+              <h3>디엔에이브로</h3>
+              <p>디엔에이브로에 다니면서 제작했던 홈페이지 입니다.</p>
+              <p>https://cb.udec.kr/home/mainPage.do</p>
+              <p></p>
+              <h3>homepage_design</h3>
+              <div class="homepage_design">
+                <img src="img/design/page01.jpg" alt="homepage_design">
+                <img src="img/design/sub02.jpg" alt="homepage_design">
+                <img src="img/design/sub01.jpg" alt="homepage_design">
+              </div>
+            </div>
+          </div>
+          <div id="Ds03" class="dstabcontent">
+            <div class="design_mainText">
+              <h3>두루디자인</h3>
+              <p></p>
+              <h3>Detailed page design</h3>
+              <div class="Detail_page">
+                <img src="img/design/dp01.jpg" alt="Detail page_design">
+                <img src="img/design/dp02.jpg" alt="Detailed page_design">
+                <img src="img/design/dp03.jpg" alt="Detailed page_design">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
