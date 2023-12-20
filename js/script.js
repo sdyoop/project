@@ -43,25 +43,21 @@ function openPj(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-(function( $ ) {
-  "use strict";
-  $(function() {
-      function animated_contents() {
-          $(".zt-skill-bar > div ").each(function (i) {
-              var $this  = $(this),
-                  skills = $this.data('width');
-
-              $this.css({'width' : skills + '%'});
-
-          });
-      }
-      
-      if(jQuery().appear) {
-          $('.zt-skill-bar').appear().on('appear', function() {
-              animated_contents();
-          });
-      } else {
-          animated_contents();
-      }
+// Progress bars
+jQuery(document).ready(function(){
+  
+  jQuery('.progress-bar').each(function() {
+    jQuery(this).find('.progress-content').animate({
+      width:jQuery(this).attr('data-percentage')
+    },2000);
+    
+    jQuery(this).find('.progress-number-mark').animate(
+      {left:jQuery(this).attr('data-percentage')},
+      {duration: 2000,
+      step: function(now, fx) {
+      var data = Math.round(now);
+      jQuery(this).find('.percent')
+      .html(data + '%');}
+    });  
   });
-}(jQuery));
+});

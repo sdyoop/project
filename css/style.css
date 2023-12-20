@@ -1,25 +1,45 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
 
-*{ box-sizing: border-box;
-  margin: 0;padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-ul{list-style: none;}
-a{display: block;text-decoration: none;color: inherit;}
-img{display: block; object-fit: cover;}
-body {overflow-x: hidden;}
-#wrap{
-  width: 100%; height: 100%;
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
   max-width: 1920px;
-  color:#fff;
+  color: #fff;
   background-color: #011F1F;
 }
 
 /* 인덱스 */
-#mySidenav{
+#mySidenav {
   z-index: 99;
   position: relative;
 }
+
 #mySidenav a {
   font-family: 'Grandiflora One', cursive;
   position: fixed;
@@ -31,9 +51,11 @@ body {overflow-x: hidden;}
   color: white;
   border-radius: 0 5px 5px 0;
 }
+
 #mySidenav a:hover {
   left: 0;
 }
+
 .sidenav1 {
   top: 120px;
   background-color: #273f3f;
@@ -53,88 +75,101 @@ body {overflow-x: hidden;}
   top: 300px;
   background-color: #a3adad;
 }
+
 .sidenav5 {
   top: 360px;
   background-color: #d0d5d5;
 }
 
-
-.inner{
+.inner {
   width: 1920px;
   height: 1080px;
   margin: 0 auto;
 }
 
-.header{
-  max-width: 1640px; height: 100px;
+.header {
+  max-width: 1640px;
+  height: 100px;
   margin: 0 auto;
   font-family: 'Grandiflora One', cursive;
   position: relative;
 }
-.intro .inner{
-  max-width: 1640px; width: 100%;
+
+.intro .inner {
+  max-width: 1640px;
+  width: 100%;
   position: relative;
 }
 
 
-
-
-.header h1{
+.header h1 {
   float: left;
   line-height: 100px;
 }
-.header nav{
+
+.header nav {
   line-height: 100px;
   letter-spacing: 2px;
   float: right;
 }
-.header nav ul{
+
+.header nav ul {
   width: 500px;
   font-weight: bold;
 }
-.header nav ul li{
+
+.header nav ul li {
   float: left;
-  width:100px;
+  width: 100px;
   color: #fff;
   text-align: center;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   color: rgb(117, 117, 117);
 }
-.header::after{
-  content:'';display: block;clear: both;
+
+.header::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
-.port{
+.port {
   width: 1640px;
-  margin-top:200px;
+  margin-top: 200px;
   margin-left: 140px;
   position: relative;
   transform: .5s scale(1.1);
 }
-.port_text p{
+
+.port_text p {
   font-family: 'Grandiflora One', cursive;
   font-size: 80px;
   transition: 1s;
 }
-.port_text{
+
+.port_text {
   width: 569px;
   position: relative;
 }
-.port_text img{
+
+.port_text img {
   position: absolute;
-  top: 0; right: 0;
+  top: 0;
+  right: 0;
   transition: 1s;
 
 }
+
 @keyframes port_text_img {
-  to{
+  to {
     opacity: .8;
     transform: scale(.8) rotate(15deg);
   }
 }
-.port_text_img>img{
+
+.port_text_img>img {
   float: left;
   transition: 1s;
   margin-top: 140px;
@@ -142,180 +177,202 @@ nav ul li a:hover{
   animation: port_text_img 2s linear forwards infinite;
 }
 
-.intro_img{
+.intro_img {
   top: 140px;
   right: 0px;
   transition: 2s;
   position: absolute;
   animation: intro 2s linear forwards infinite;
 }
-@keyframes intro{
-  from{
-    translate:(50px, 100px);
+
+@keyframes intro {
+  from {
+    translate: (50px, 100px);
     transition: 1.5s;
     transform: scale(1) rotate(-15deg);
   }
-  to{
-    translate:(50px, 100px);
+
+  to {
+    translate: (50px, 100px);
     transition: 1.5s;
     opacity: .7;
     transform: scale(.8) rotate(15deg);
   }
 }
 
-.sparkling3{
+.sparkling3 {
   left: 480px;
   top: 180px;
   position: absolute;
 }
-/* about */
 
-.about{
+/* about */
+.about {
   position: relative;
   margin: 0 auto;
   background-color: #011F1F;
-  max-width: 1920px; min-height: 1080px;
+  max-width: 1920px;
+  min-height: 1080px;
 }
-.about>.inner{
+
+.about>.inner {
   margin: 0 auto;
   max-width: 1640px;
   min-height: 1080px;
 }
-.contents img{
+
+.contents_items>img {
+  float: left;
   top: 114px;
   left: 110px;
   bottom: 136px;
   position: absolute;
+  height: auto;
 }
-.about>.inner .about_text{
+
+.about>.inner .about_text {
   padding-top: 297px;
-  text-align: right;
+  text-align: left;
   float: right;
   width: 690px;
 }
-.about_text h1{
+
+.about_text h1 {
   font-size: 64px;
 }
-.about_text p{
+
+.about_text p {
   padding-top: 38px;
 }
 
-
-
-.contents_items img{
+.contents_items img {
   /* Create View Timeline */
   view-timeline-name: --revealing-image;
   view-timeline-axis: block;
 
-/* Attach animation, linked to the  View Timeline */
-animation: linear reveal both;
-animation-timeline: --revealing-image;
+  /* Attach animation, linked to the  View Timeline */
+  animation: linear reveal both;
+  animation-timeline: --revealing-image;
 
-/* Tweak range when effect should run*/
-animation-range: entry 25% cover 50%;
+  /* Tweak range when effect should run*/
+  animation-range: entry 25% cover 50%;
 }
 
 @keyframes reveal {
-	from {
-		opacity: 0;
-		clip-path: inset(45% 20% 45% 20%);
-	}
-	to {
-		opacity: 1;
-		clip-path: inset(0% 0% 0% 0%);
-	}
+  from {
+    opacity: 0;
+    clip-path: inset(45% 20% 45% 20%);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
 }
 
 /* Skill bar style */
-.zt-skill-bar {
-  color: #fff;
-  font-size: 11px;
-  line-height: 25px;
-  height: 25px;
-  margin-bottom: 5px;
 
-  background-color: rgba(0,0,0,0.1);
-
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
-
+.skills {
+  height: 300px;
+  margin: 0 auto;
 }
 
-.zt-skill-bar * {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.progress-bar {
+  margin: 0 0 10px;
+  overflow: hidden;
+  padding-right: 24px; /* Separate bars from container */
 }
 
-.zt-skill-bar div {
-  background-color: #ffc600;
+.progress-title-holder {
+  padding-bottom: 7px;
   position: relative;
-  padding-left: 20px;
-  width: 0;
-  text-align: left;
-  color: #011F1F;
-
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-    border-radius: 2px;
+  margin: 5px 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #2e2e2e;  
 }
 
-.zt-skill-bar span {
-  display: block;
+.progress-title {
   color: #fff;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  padding: 0 5px 0 10px;
-  background-color: #1a1a1a;
-
-  -webkit-border-radius: 0 2px 2px 0;
-  -moz-border-radius: 0 2px 2px 0;
-  -ms-border-radius: 0 2px 2px 0;
-  border-radius: 0 2px 2px 0;
 }
 
-.zt-skill-bar span:before {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  top: 50%;
-  left: -3px;
-  margin-top: -3px;
-  background-color: #1a1a1a;
-
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+.progress-number-wrapper {
+  width: 100%;
+  z-index: 10;
 }
 
+.progress-number-mark {
+  margin-bottom: 4px;
+  border-radius: 3px;
+  background-color: rgb(22,23,29);
+  padding: 0 8px;
+  position: absolute;
+  bottom: 0;   
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); 
+} 
 
+.progress-number-wrapper,
+.progress-number-mark {
+  font-family: Open Sans, sans-serif;
+  font-size: 11px;
+  line-height: 24px;
+  height: 24px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+  color: #ffffff;
+}
+
+.down-arrow {
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid #16171d;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);  
+}
+
+.progress-content-outter {
+  height: 12px;
+  background-color: #ffffff;
+}
+
+.progress-content {
+  height: 21px;
+  background-color: rgba(67, 243, 183, .92);
+  width: 0%; /* Initial value */
+}
 
 /* design */
-.design{
+.design {
   margin: 0 auto;
   max-width: 1920px;
   max-height: 1080px;
   position: relative;
 }
-.design>.inner{
+
+.design>.inner {
   width: 1640px;
 }
 
-.design>.inner h3{
+.design>.inner h3 {
   text-align: left;
   margin-bottom: 20px;
 }
 
-.design_img{
+.design_img {
   width: 800px;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -326,9 +383,11 @@ animation-range: entry 25% cover 50%;
   display: block;
   clear: both;
 }
-.design_item{
+
+.design_item {
   width: 100%;
 }
+
 .dstab {
   float: left;
   border: 1px solid #ccc;
@@ -336,8 +395,7 @@ animation-range: entry 25% cover 50%;
   width: 10%;
 }
 
-
-.design_layout{
+.design_layout {
   width: 20%;
 }
 
@@ -347,34 +405,37 @@ animation-range: entry 25% cover 50%;
   color: black;
   width: 100%;
 }
-.design_content img{
+
+.design_content img {
   width: 100%;
   margin-left: 10px;
   display: flex;
 }
-.design_content::after{
+
+.design_content::after {
   display: block;
   clear: both;
   content: '';
 }
 
-
 /* 세로탭메뉴 : 버튼형식으로 구성  */
-
-.design_main{
+.design_main {
   box-sizing: border-box;
   width: 100%;
   color: #fff;
 }
-.design_main img{
+
+.design_main img {
   box-sizing: border-box;
 
 }
-.design_mainText{
+
+.design_mainText {
   width: 100%;
   margin-left: 10px;
 }
-.design_mainText img{
+
+.design_mainText img {
   width: 33%;
   float: left;
   margin-left: 10px;
@@ -412,29 +473,24 @@ animation-range: entry 25% cover 50%;
   border-left: none;
 }
 
-.Detail_page{
+.Detail_page {
   width: 100%;
   display: flex;
 }
 
-
-
-.homepage_design{
+.homepage_design {
   width: 100%;
   display: flex;
 }
-
-
-
-
 
 /* 프로젝트 */
-.project:after{
+.project:after {
   content: '';
   clear: both;
   display: block;
 }
-.project{
+
+.project {
   max-width: 1920px;
   min-height: 1080px;
   margin: 0 auto;
@@ -442,22 +498,22 @@ animation-range: entry 25% cover 50%;
   height: 100%;
 }
 
-.project>.inner{
+.project>.inner {
   width: 1640px;
   margin: 0 auto;
 }
 
-.project_item h2{
+.project_item h2 {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: left;
 }
-.project_item{
+
+.project_item {
   height: 1080px;
 }
 
-/*htab  */
-
+/*가로탭  */
 /* Style the tab */
 .htab {
   width: 100%;
@@ -469,10 +525,12 @@ animation-range: entry 25% cover 50%;
 .htab button {
   background-color: inherit;
   float: left;
+  display: block;
+  width: 100px;
+  height: 40px;
   border: none;
-  outline: none;
+  box-sizing: border-box;
   cursor: pointer;
-  padding: 14px 16px;
   transition: 0.3s;
 }
 
@@ -492,15 +550,17 @@ animation-range: entry 25% cover 50%;
   padding: 6px 12px;
   border-top: none;
 }
-.htabcontent>img{
+
+.htabcontent>img {
   margin-top: 25px;
   border-radius: 10px;
 }
-.htabcontent_text{
-  margin-top:25px;
+
+.htabcontent_text {
+  margin-top: 25px;
 }
 
-.htabcontent_text a{
+.htabcontent_text a {
   cursor: pointer;
   background: #000;
   margin-top: 10px;
@@ -512,3 +572,12 @@ animation-range: entry 25% cover 50%;
   border-radius: 40px;
 }
 
+/* 미디어쿼리 적용 */
+
+@media screen and (max-width: 768px) {
+
+  /* 화면 너비가 768px 이하인 경우에만 적용되는 스타일 */
+  .header nav {
+    display: none;
+  }
+}
