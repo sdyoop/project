@@ -126,6 +126,7 @@ nav ul li a:hover{
   position: absolute;
   top: 0; right: 0;
   transition: 1s;
+
 }
 @keyframes port_text_img {
   to{
@@ -199,21 +200,106 @@ nav ul li a:hover{
   padding-top: 38px;
 }
 
-.contents_items ul{
-  float: right;
-  width: 400px;
-  text-align: center;
-  display: flex;
-} 
-.contents_items ul p{
-  text-align: left;
-} 
-.contents_items ul li{
-  padding-top: 80px;
-  font-weight: bold;
-  width: 100px;
-} 
 
+
+.contents_items img{
+  /* Create View Timeline */
+  view-timeline-name: --revealing-image;
+  view-timeline-axis: block;
+
+/* Attach animation, linked to the  View Timeline */
+animation: linear reveal both;
+animation-timeline: --revealing-image;
+
+/* Tweak range when effect should run*/
+animation-range: entry 25% cover 50%;
+}
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+		clip-path: inset(45% 20% 45% 20%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% 0% 0%);
+	}
+}
+
+/* Skill bar style */
+.zt-skill-bar {
+  color: #fff;
+  font-size: 11px;
+  line-height: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+
+  background-color: rgba(0,0,0,0.1);
+
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+
+}
+
+.zt-skill-bar * {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.zt-skill-bar div {
+  background-color: #ffc600;
+  position: relative;
+  padding-left: 20px;
+  width: 0;
+  text-align: left;
+  color: #011F1F;
+
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.zt-skill-bar span {
+  display: block;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 5px 0 10px;
+  background-color: #1a1a1a;
+
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 0 2px 2px 0;
+  -ms-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+}
+
+.zt-skill-bar span:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 50%;
+  left: -3px;
+  margin-top: -3px;
+  background-color: #1a1a1a;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+/* design */
 .design{
   margin: 0 auto;
   max-width: 1920px;
@@ -254,8 +340,6 @@ nav ul li a:hover{
 .design_layout{
   width: 20%;
 }
-
-
 
 .design_content {
   display: flex;
@@ -328,10 +412,12 @@ nav ul li a:hover{
   border-left: none;
 }
 
-.Detail_page {
+.Detail_page{
   width: 100%;
   display: flex;
 }
+
+
 
 .homepage_design{
   width: 100%;
@@ -425,3 +511,4 @@ nav ul li a:hover{
   border: 3px solid #fff;
   border-radius: 40px;
 }
+
