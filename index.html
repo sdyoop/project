@@ -54,20 +54,22 @@
     </div>
     <div class="about" id="about">
       <div class="inner">
-        <div class="contents">
+        <div class="about_wrap">
           <div class="contents_items">
             <img src="./img/intro/about.png" alt="about">
-            <div class="about_text">
-              <h1>I Can do it!</h1>
-              <h4>History : 1997년 2월 ~ 현재까지 </h4>
-              <h4>Likes : 노래 볼링 빵 사진 </h4>
-              <h4>좌우명 : Luce sicut stellae✨ 별처럼 밝게 빛나라 </h4>
-              <p>
-                안녕하세요! IT생태계에 문을 두드리고 있는 심 다영이라고 합니다.<br>
-                한 걸음 한 발짝 앞으로 나아가고 있으며 404 또는 503 알 수 없는 에러들이 많을 수 있지만<br> 에러를 수정하고 잡아낼 수 있다는 마음으로 프론트앤드 개발자라는 곳에 문을
-                쾅쾅쾅쾅<br> 두드리고 있습니다. 나는 할 수 있다는 생각과 그에 대한 노력으로 성장하며 앞으로 나가고자<br> 합니다.
-              </p>
-              <br>
+            <div class="about_wrap">
+              <div class="about_text">
+                <h1>I Can do it!</h1>
+                <h4>History : 1997년 2월 ~ 현재까지 </h4>
+                <h4>Likes : 노래 볼링 빵 사진 </h4>
+                <h4>좌우명 : Luce sicut stellae✨ 별처럼 밝게 빛나라 </h4>
+                <p>
+                  안녕하세요! IT생태계에 문을 두드리고 있는 심 다영이라고 합니다.<br>
+                  한 걸음 한 발짝 앞으로 나아가고 있으며 404 또는 503 알 수 없는 에러들이 많을 수 있지만<br> 에러를 수정하고 잡아낼 수 있다는 마음으로 프론트앤드 개발자라는 곳에 문을
+                  쾅쾅쾅쾅<br> 두드리고 있습니다. 나는 할 수 있다는 생각과 그에 대한 노력으로 성장하며 앞으로 나가고자<br> 합니다.
+                </p>
+                <br>
+              </div>
               <div class="skills">
                 <!-- First bar -->
                 <div class="progress-bar" data-percentage="55%">
@@ -114,23 +116,36 @@
                     <div class="progress-content"></div>
                   </div>
                 </div>
+                <div class="progress-bar" data-percentage="50%">
+                  <h4 class="progress-title-holder clearfix">
+                    <span class="progress-title">react</span>
+                    <span class="progress-number-wrapper">
+                      <span class="progress-number-mark">
+                        <span class="percent"></span>
+                        <span class="down-arrow"></span>
+                      </span>
+                    </span>
+                  </h4>
+                  <div class="progress-content-outter">
+                    <div class="progress-content"></div>
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
-          
         </div>
       </div>
     </div>
     <div class="project" id="project">
       <div class="inner">
+        <h2>PROJECT</h2>
         <div class="project_item">
-          <h2>PROJECT</h2>
           <div class="htab">
             <button class="htablinks" onclick="openPj(event, 'hLondon')">시드물</button>
             <button class="htablinks" onclick="openPj(event, 'hParis')">platfoU</button>
             <button class="htablinks" onclick="openPj(event, 'hUdec')">충북UDEC</button>
             <button class="htablinks" onclick="openPj(event, 'hTokyo')">Apple</button>
           </div>
-
           <!-- Tab content -->
           <div id="hLondon" class="htabcontent">
             <img src="img/project01.png" alt="">
@@ -167,7 +182,6 @@
               <a target="_blank" href="https://aesthetic-longma-1117.netlify.app/">Click</a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -234,7 +248,8 @@
         </div>
       </div>
     </div>
-  </div>
+
+
 </body>
 
 </html>
