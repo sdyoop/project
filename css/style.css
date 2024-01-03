@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
 * {
   box-sizing: border-box;
@@ -31,7 +32,7 @@ body {
   height: 100%;
   max-width: 1920px;
   color: #fff;
-  background-color: #011F1F;
+  background-color: #0D0D0D;
 }
 
 /* 인덱스 */
@@ -137,86 +138,30 @@ nav ul li a:hover {
 }
 
 .port {
-  width: 1640px;
-  margin-top: 200px;
-  margin-left: 140px;
-  position: relative;
-  transform: .5s scale(1.1);
+  text-align: center;
 }
 
 .port_text p {
-  font-family: 'Grandiflora One', cursive;
+  margin-top: 20px;
+  font-family: 'Black Han Sans', sans-serif;
   font-size: 80px;
   transition: 1s;
 }
 
-.port_text {
-  width: 569px;
-  position: relative;
-  width: 50%;
-  height: auto;
-}
 
 .port_text img {
-  position: absolute;
-  top: 0;
-  right: 0;
+  width: 45%;
+  margin-top: 50px;
   transition: 1s;
-}
-.port_text_img {
-  width: 50%;
-  height: auto;
+  transform:translatex(415px);
 }
 
-@keyframes port_text_img {
-  to {
-    opacity: .8;
-    transform: scale(.8) rotate(15deg);
-  }
-}
-
-.port_text_img>img {
-  float: left;
-  transition: 1s;
-  margin-top: 140px;
-  margin-right: 20px;
-  animation: port_text_img 2s linear forwards infinite;
-}
-
-.intro_img {
-  top: 140px;
-  right: 0px;
-  transition: 2s;
-  position: absolute;
-  animation: intro 2s linear forwards infinite;
-}
-
-@keyframes intro {
-  from {
-    translate: (50px, 100px);
-    transition: 1.5s;
-    transform: scale(1) rotate(-15deg);
-  }
-
-  to {
-    translate: (50px, 100px);
-    transition: 1.5s;
-    opacity: .7;
-    transform: scale(.8) rotate(15deg);
-  }
-}
-
-.sparkling3 {
-  left: 480px;
-  top: 180px;
-  position: absolute;
-}
 
 /* about */
 .about {
+  padding-top: 40px;
   max-width: 1920px;
   margin: 0 auto;
-  background-color: #011F1F;
   height: 100%;
   clear: both;
 }
@@ -228,9 +173,10 @@ nav ul li a:hover {
 }
 
 .contents_items img{
-  width: 760px;
+  width: 40%;
   height: 830px;
-  margin-right: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
   float: left;
   height: auto;
 }
@@ -287,9 +233,6 @@ nav ul li a:hover {
 }
 
 /* Skill bar style */
-
-
-
 .progress-bar {
   margin: 0 0 10px;
   overflow: hidden;
@@ -381,10 +324,7 @@ nav ul li a:hover {
   max-height: 1080px;
 }
 
-.design>.inner h3 {
-  text-align: left;
-  margin-bottom: 20px;
-}
+
 
 .design_img {
   width: 800px;
@@ -399,6 +339,7 @@ nav ul li a:hover {
 }
 
 .design_item {
+  padding-top: 40px;
   width: 100%;
 }
 
@@ -409,9 +350,7 @@ nav ul li a:hover {
   width: 10%;
 }
 
-.design_layout {
-  /* display: flex; */
-}
+
 
 .design_content{
   width: 100%;
@@ -499,14 +438,15 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
-.project_item h2 {
-  padding-top: 30px;
+.project_item {
+  padding-top: 40px;
   padding-bottom: 30px;
   text-align: left;
 }
 
 .project_item {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   height: 1080px;
 }
 
@@ -569,6 +509,46 @@ nav ul li a:hover {
   border-radius: 40px;
 }
 
+/* 갤러리 */
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 50%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
 /* 미디어쿼리 적용 */
 
 @media (max-width:768px){
@@ -588,20 +568,13 @@ nav ul li a:hover {
       display: none;
     }
     .port{
-      width: 70%;
+      margin-left: 20%;
+      text-align: left;
+      width: 80%;
     }
     /* Intro img */
     #intro .intro_img {
-      width: 70%;
       right: 50px;
-    }
-    .port_text img{
-      display: none;
-    }
-    .port_text_img {
-      width: 80%;
-      margin: 0; padding: 0;
-      float: left;
     }
     /* about Image */
 
@@ -627,7 +600,7 @@ nav ul li a:hover {
   /* project */
   .project{
     width: 100%;
-    height: 100%;
+    height: 600px;
     clear: both;
   }
   .project>.inner {
@@ -674,8 +647,8 @@ nav ul li a:hover {
     width: 30%;
     margin-left: 10px;
   }
-  .Detail_page img{
-    width: 20%;
-    margin-left: 10px;
+  .responsive{
+    width: 33.33%;
   }
 }
+
