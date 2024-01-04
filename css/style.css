@@ -153,7 +153,6 @@ nav ul li a:hover {
   width: 45%;
   margin-top: 50px;
   transition: 1s;
-  transform:translatex(415px);
 }
 
 
@@ -414,10 +413,6 @@ nav ul li a:hover {
   background-color: #ccc;
 }
 
-/* Style the tab content */
-
-
-
 
 
 /* 프로젝트 */
@@ -564,18 +559,23 @@ div.gallery img {
       height: 100%;
     }
     /* Navigation */
+    .intro{height: 500px;}
     #intro .header nav {
       display: none;
     }
     .port{
       margin-left: 20%;
       text-align: left;
-      width: 80%;
+      width: 40%;
     }
-    /* Intro img */
-    #intro .intro_img {
-      right: 50px;
+    .port_text p{
+      font-size: 2rem;
     }
+    .port_text img {
+      width: 100%;
+      margin-top: 50px;
+      transition: 1s;}
+    
     /* about Image */
 
     .about{
@@ -629,7 +629,7 @@ div.gallery img {
   }
   .dstab button{
     float: left;
-    width: 50px;
+    width: 70px;
     font-size: 10px;
     text-align: center;
   }
